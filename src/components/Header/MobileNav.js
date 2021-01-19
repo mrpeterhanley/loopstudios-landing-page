@@ -116,11 +116,11 @@ const MobileNav = () => {
             </div>
             <MobileMenu menuOpen={menuOpen}>
                 <ul>
-                    <li><Link to="/">About</Link></li>
-                    <li><Link to="/">Careers</Link></li>
-                    <li><Link to="/">Events</Link></li>
-                    <li><Link to="/">Products</Link></li>
-                    <li><Link to="/">Support</Link></li>
+                    <li><Link to="/" onClick={toggleMenu}>About</Link></li>
+                    <li><Link to="/" onClick={toggleMenu}>Careers</Link></li>
+                    <li><Link to="/" onClick={toggleMenu}>Events</Link></li>
+                    <li><Link to="/" onClick={toggleMenu}>Products</Link></li>
+                    <li><Link to="/" onClick={toggleMenu}>Support</Link></li>
                 </ul>
             </MobileMenu>
         </MobileNavStyles>
