@@ -24,6 +24,7 @@ const FooterStyles = styled.footer`
   .grid {
     display: grid;
     width: 100%;
+    max-width: 80rem;
     grid-template-columns: 1fr;
     justify-items: center;
     grid-gap: 2rem;
@@ -94,8 +95,15 @@ const FooterStyles = styled.footer`
         justify-self: end;
         text-align: right;
       }
+    } 
+  }
+
+  @media (min-width: 1310px) {
+
+    .grid {
+      max-width: 80rem;
     }
-        
+
   }
 `;
 
