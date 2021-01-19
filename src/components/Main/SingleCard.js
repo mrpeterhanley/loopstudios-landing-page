@@ -7,10 +7,18 @@ const SingleCardStyles = styled.div`
   background-image: url(${({mobileBgImage}) => mobileBgImage});
   background-size: cover;
   background-position: center;
+  position: relative;
 
-  :hover {
-     opacity: 75%;
-   }
+  :hover a::after {
+    content:'';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--dark-gray);
+    opacity: 0.7;
+  }
 
   a {
       text-decoration: none;
@@ -30,6 +38,7 @@ const SingleCardStyles = styled.div`
 
       h3 {
           max-width: 11.5rem;
+          z-index: 2;
       }
   }
 
@@ -44,7 +53,7 @@ const SingleCardStyles = styled.div`
 const SingleCard = ({ mobileBgImage, desktopBgImage, title }) => {
   return (
     <SingleCardStyles mobileBgImage={mobileBgImage} desktopBgImage={desktopBgImage}>
-      <Link to="/">
+      <Link to="#">
         <h3>{title}</h3>
       </Link>
     </SingleCardStyles>
