@@ -5,21 +5,15 @@ import logo from "../../images/logo.svg";
 
 const DesktopNavStyles = styled.nav`
 
-    @media (max-width: 1000px) {
-        display: none;
-    }
-
     width: 100%;
     position: absolute;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: space-between;
     z-index: 3;
     padding: 3.2rem 1.6rem;
 
-    @media (min-width: 1200px) {
-        padding: 3.2rem 11rem;
-    }
+   
 
     ul {
         list-style: none;
@@ -45,13 +39,27 @@ const DesktopNavStyles = styled.nav`
             }
         }
     }
+
+    @media (min-width: 700px) {
+        padding: 3.2rem 3.5rem;
+    } 
+
+    @media (min-width: 980px) {
+        display: flex;
+    }
+
+    @media (min-width: 1310px) {
+        max-width: 80rem;
+        margin: 0 auto 0 auto;
+        padding: 3.2rem 0;
+    }
 `;
 
 const DesktopNav = () => {
 
     return (
         <DesktopNavStyles>
-            <img src={logo} alt="loopstudios logo" />
+            <Link to="/"><img src={logo} alt="loopstudios logo" /></Link>
             <ul>
                 <li><Link to="/">About</Link></li>
                 <li><Link to="/">Careers</Link></li>

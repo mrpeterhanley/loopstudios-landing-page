@@ -6,7 +6,7 @@ import logo from "../../images/logo.svg";
 
 const MobileNavStyles = styled.nav`
 
-    .nav-top {
+    .top {
         position: absolute;
         width: 100%;
         display: flex;
@@ -25,7 +25,7 @@ const MobileNavStyles = styled.nav`
     }
 
     @media (min-width: 700px) {
-        .nav-top {
+        .top {
             padding: 3.2rem 3.5rem;
 
             img {
@@ -99,8 +99,8 @@ const MobileNav = () => {
 
     return (
         <MobileNavStyles>
-            <div className="nav-top">
-                <img src={logo} alt="loopstudios logo" />
+            <div className="top">
+                <Link to="/"><img src={logo} alt="loopstudios logo" /></Link>
                 <HamburgerMenu
                     className="hamburger-icon"
                     isOpen={menuOpen}
@@ -115,13 +115,13 @@ const MobileNav = () => {
                 />
             </div>
             <MobileMenu menuOpen={menuOpen}>
-                    <ul>
-                        <li><Link to="/">About</Link></li>
-                        <li><Link to="/">Careers</Link></li>
-                        <li><Link to="/">Events</Link></li>
-                        <li><Link to="/">Products</Link></li>
-                        <li><Link to="/">Support</Link></li>
-                    </ul>
+                <ul>
+                    <li><Link to="/">About</Link></li>
+                    <li><Link to="/">Careers</Link></li>
+                    <li><Link to="/">Events</Link></li>
+                    <li><Link to="/">Products</Link></li>
+                    <li><Link to="/">Support</Link></li>
+                </ul>
             </MobileMenu>
         </MobileNavStyles>
     )

@@ -35,7 +35,7 @@ const GlobalStyles = createGlobalStyle`
         overflow-x: hidden;
     }
 
-    h1, h2 {
+    h1, h2, h3 {
         font-family: "JosefinSans", Arial, Helvetica, sans-serif;
     }
 
@@ -51,6 +51,19 @@ const GlobalStyles = createGlobalStyle`
         text-transform: uppercase;
     }
 
+    h3 {
+        font-size: 2.13rem;
+        line-height: 2.13rem;
+        text-transform: uppercase;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 80rem;
+    }
+
     @media (max-width: 700px) {
 
         h1 {
@@ -61,6 +74,11 @@ const GlobalStyles = createGlobalStyle`
         h2 {
             font-size: 2.13rem;
             line-height: 2.13rem;
+        }
+
+        h3 {
+            font-size: 1.6rem;
+            line-height: 1.6rem;
         }
     }
 
