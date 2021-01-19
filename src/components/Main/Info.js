@@ -12,8 +12,9 @@ const InfoStyles = styled.article`
 
   img {
     width: 100%;
-    height: auto;
     max-width: 48.73rem;
+    height: auto;
+    object-fit: cover;
     padding: 0 1.6rem 0 1.6rem;
   }
 
