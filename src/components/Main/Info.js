@@ -7,12 +7,12 @@ const InfoStyles = styled.article`
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* margin: 0 1.6rem 6.4rem 1.6rem; */
   width: 100%;
   max-width: 100%;
 
   img {
     width: 100%;
+    height: auto;
     max-width: 48.73rem;
     padding: 0 1.6rem 0 1.6rem;
   }
