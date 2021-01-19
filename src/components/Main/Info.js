@@ -36,6 +36,7 @@ const InfoStyles = styled.article`
     .info-text {
       padding: 2rem 3.5rem 0 3.5rem;
     }
+  }
 
   @media (min-width: 1310px) {
     position: relative;

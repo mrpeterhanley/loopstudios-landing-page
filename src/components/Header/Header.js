@@ -19,7 +19,7 @@ const HeaderStyles = styled.header`
 
   .title-wrapper {
     max-width: 100%;
-    margin: 50% 1.6rem 6.4rem 1.6rem;
+    margin: 40vh 1.6rem 6.4rem 1.6rem;
   }
 
   .title-inner {
@@ -28,6 +28,14 @@ const HeaderStyles = styled.header`
 
     h1 {
       color: white;
+    }
+  }
+
+  @media (min-width: 450px) {
+
+    .title-wrapper {
+      max-width: 23.33rem;
+      align-self: center;
     }
   }
 
@@ -40,6 +48,7 @@ const HeaderStyles = styled.header`
     .title-wrapper {
       margin: 15rem 3.5rem 0 3.5rem;
       max-width: 80rem;
+      align-self: flex-start;
     }
 
     .title-inner {
