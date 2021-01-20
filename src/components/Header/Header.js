@@ -37,6 +37,10 @@ const HeaderStyles = styled.header`
       max-width: 23.33rem;
       align-self: center;
     }
+
+    .title-inner {
+      padding: 2.5rem;
+    }
   }
 
   @media (min-width: 700px) {
@@ -47,6 +51,7 @@ const HeaderStyles = styled.header`
 
     .title-wrapper {
       margin: 15rem 3.5rem 0 3.5rem;
+      width: 100%;
       max-width: 80rem;
       align-self: flex-start;
     }
@@ -60,14 +65,8 @@ const HeaderStyles = styled.header`
     align-items: center;
 
     .title-wrapper {
-      width: 100%;
-      max-width: 80rem;
       margin: 15rem auto 0 auto;
       display: flex;
-    }
-
-    .title-inner {
-      max-width: 43.33rem;
     }
   }
 `
