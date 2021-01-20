@@ -21,20 +21,23 @@ const FooterStyles = styled.footer`
     max-width: 9.6rem;
   }
 
+  .social-links li {
+        margin-right: 0.75rem;
+  }
+
   .grid {
     display: grid;
     width: 100%;
     max-width: 80rem;
     grid-template-columns: 1fr;
     justify-items: center;
-    grid-gap: 2rem;
+    grid-gap: 1.5rem;
 
     ul {
       display: flex;
       list-style: none;
 
       li {
-        margin-right: 1rem;
 
         a {
           color: white;
@@ -60,6 +63,8 @@ const FooterStyles = styled.footer`
       align-items: center;
 
       li {
+
+        margin-bottom: 0.75rem;
 
         a::after {
           width: 50%;
@@ -87,6 +92,10 @@ const FooterStyles = styled.footer`
 
         ul {
         flex-direction: row;
+
+          li {
+            margin-right: 1rem;
+          }
         }
       }
 
