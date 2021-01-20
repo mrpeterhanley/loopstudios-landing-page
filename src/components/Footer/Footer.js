@@ -34,7 +34,7 @@ const FooterStyles = styled.footer`
       list-style: none;
 
       li {
-        margin: 0.5rem;
+        margin-right: 1rem;
 
         a {
           color: white;

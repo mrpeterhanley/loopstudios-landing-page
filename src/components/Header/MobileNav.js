@@ -17,6 +17,8 @@ const MobileNavStyles = styled.nav`
 
         img {
                 max-width: 9.6rem;
+                width: 100%;
+                height: auto;
         }
 
         .hamburger-icon:hover {
@@ -30,6 +32,8 @@ const MobileNavStyles = styled.nav`
 
             img {
                 max-width: 12.8rem;
+                width: 100%;
+                height: auto;
             }
         }
     }
