@@ -25,6 +25,10 @@ const FooterStyles = styled.footer`
         margin-right: 0.75rem;
   }
 
+  .social-links li:nth-child(4) {
+        margin-right: 0;
+  }
+
   .grid {
     display: grid;
     width: 100%;
