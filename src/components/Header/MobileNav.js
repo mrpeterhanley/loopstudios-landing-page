@@ -15,6 +15,10 @@ const MobileNavStyles = styled.nav`
         z-index: 3;
         padding: 3.2rem 1.6rem;
 
+        a {
+            display: flex;
+        }
+
         img {
                 max-width: 9.6rem;
                 width: 100%;
